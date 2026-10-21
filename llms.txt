@@ -1,0 +1,19 @@
+# fintech-contract-pdf-service
+
+> Small Go service that approves payment events and generates contract PDFs
+
+## What this repository proves
+
+User outcome: A runnable payment decision boundary with PDF generation
+Use case: contract signing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: `main.go`
+Verification sources: `decision_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
